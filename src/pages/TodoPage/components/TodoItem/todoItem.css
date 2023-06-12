@@ -1,0 +1,70 @@
+.todoItem {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 30px 1fr 120px;
+  grid-template-rows: 1fr;
+  align-items: center;
+  text-align: start;
+  align-content: center;
+  background-color: rgb(255 255 255);
+  padding: 5px 25px 5px 15px;
+  border-left: 4px solid #3461ff;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+.todoItem p{
+  line-height: 20px;
+  font-size: 18px;
+}
+.todoItem_title {
+  cursor: pointer;
+  display: flex;
+}
+
+.todoItem_title.completed {
+  text-decoration-line: line-through;
+  color: gray;
+}
+.todoItem_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.completedButton {
+  width: 20px;
+  height: 20px;
+}
+.completedButton input{
+    width: 100%;
+    height: 100%;
+}
+.updateInput{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+    margin-left: 15px;
+
+}
+.updateInput input{
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.confirmButton {
+   background: green;
+   opacity: 0.7;
+}
+.deleteButton {
+   background: red;
+   opacity: 0.7;
+}
+.updateButton {
+   background: blue;
+   opacity: 0.7;
+}
